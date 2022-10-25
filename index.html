@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./stylesheet.css">    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+        <h1>Fathur Rahman</h1>
+        <h2>Kelas A</h2>
+        <h2>MBKM USK Progate</h2>
+    </div>
+    <div class="calculator">        
+        <div class="display">            
+            <div> 
+                
+            </div>
+            <input type="text" id="displayText" placeholder="0">
+        </div>
+        <div class="keys">
+            <div class="row-1">
+                <button id="clear" class="top" onclick=clr()>AC</button>
+                <button class="top" id="negative" onclick="posOrNeg()"><sup>+</sup>/-</button>
+                <button class="top" id="percent" onclick="percentage()">%</button>
+                <button class="operator" onclick="kalkulasi('/')">&#247;</button>
+            </div>
+            <div class="row-2">
+                <button class="angka"  onclick=kalkulasi(7)>7</button>
+                <button class="angka" onclick=kalkulasi(8)>8</button>
+                <button class="angka" onclick=kalkulasi(9)>9</button>
+                <button class="operator" onclick="kalkulasi('*')">&times;</button>
+            </div>
+            <div class="row-3">
+                <button class="angka" onclick=kalkulasi(4)>4</button>
+                <button class="angka" onclick=kalkulasi(5)>5</button>
+                <button class="angka" onclick=kalkulasi(6)>6</button>
+                <button class="operator" onclick="kalkulasi('-')">-</button>
+            </div>
+            <div class="row-4">
+                <button class="angka" onclick=kalkulasi(1)>1</button>
+                <button class="angka" onclick=kalkulasi(2)>2</button>
+                <button class="angka" onclick=kalkulasi(3)>3</button>
+                <button class="operator" onclick="kalkulasi('+')">+</button>
+            </div>
+            <div class="row-5">
+                <button class="angka" onclick=kalkulasi(0) id="zero">0</button>
+                <button id="decimal" value=".">.</button>
+                <button id="equals" onclick=Result()>=</button>
+            </div>
+        </div>
+    </div>    
+    <script src="./script.js"></script>
+</body>
+</html>
